@@ -29,10 +29,10 @@ public class Converter {
         double dollarRuble = Converter.rubleToDollar(ruble);
         System.out.println (ruble + " rubles are " + dollarRuble + " dollar.");
 
-        double rubleEuro = Converter.rubleToEuro(euroToRuble(ruble));
+        double rubleEuro = Converter.rubleToEuro(Converter.euroToRuble(ruble));
         System.out.println (euroRuble + " euro are " + rubleEuro + " rubles.");
 
-        double rubleDollar = Converter.rubleToDollar(dollarToRuble(ruble));
+        double rubleDollar = Converter.rubleToDollar(Converter.dollarToRuble(ruble));
         System.out.println (dollarRuble + " dollar are " + rubleDollar + " rubles.");
     }
 }
