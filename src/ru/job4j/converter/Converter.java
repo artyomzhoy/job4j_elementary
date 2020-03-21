@@ -21,7 +21,7 @@ public class Converter {
 
     public static void main (String[] args) {
 
-        int ruble = 571; // ДАНО
+        int ruble = 621; // ДАНО
 
         double euroRuble = rubleToEuro(ruble);
         System.out.println (ruble + " rubles are " + euroRuble + " euro.");
