@@ -23,16 +23,16 @@ public class Converter {
 
         int ruble = 621; // ДАНО
 
-        double euroRuble = rubleToEuro(ruble);
+        double euroRuble = Converter.rubleToEuro(ruble);
         System.out.println (ruble + " rubles are " + euroRuble + " euro.");
 
-        double dollarRuble = rubleToDollar(ruble);
+        double dollarRuble = Converter.rubleToDollar(ruble);
         System.out.println (ruble + " rubles are " + dollarRuble + " dollar.");
 
-        double rubleEuro = rubleToEuro(euroToRuble(ruble));
+        double rubleEuro = Converter.rubleToEuro(euroToRuble(ruble));
         System.out.println (euroRuble + " euro are " + rubleEuro + " rubles.");
 
-        double rubleDollar = rubleToDollar(dollarToRuble(ruble));
+        double rubleDollar = Converter.rubleToDollar(dollarToRuble(ruble));
         System.out.println (dollarRuble + " dollar are " + rubleDollar + " rubles.");
     }
 }
