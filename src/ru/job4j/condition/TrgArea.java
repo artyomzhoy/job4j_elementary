@@ -35,7 +35,7 @@ public class TrgArea {
         double b = 2;
         double c = 2;
 
-        double result = TrgArea.area(a, b, c);
-        System.out.println ("Area (" + a + ", " + b + ", " + c + ") = " + result + ".");
+        double rsl = TrgArea.area(a, b, c);
+        System.out.println ("Area (" + a + ", " + b + ", " + c + ") = " + rsl + ".");
     }
 }
