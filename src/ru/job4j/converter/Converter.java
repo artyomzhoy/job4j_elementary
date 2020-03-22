@@ -22,17 +22,35 @@ public class Converter {
     public static void main(String[] args) {
 
         int ruble = 621; // ДАНО
+        /*
+621 rubles are 8.871428571428572 euro.
+621 rubles are 10.35 dollar.
+8.871428571428572 euro are 621.0 rubles.
+10.35 dollar are 621.0 rubles.
+         */
 
         double euroRuble = Converter.rubleToEuro(ruble);
-        System.out.println(ruble + " rubles are " + euroRuble + " euro.");
+        double expectedRubleToEuro = 8.871428571428572;
+        boolean passedRubleToEuro = euroRuble == expectedRubleToEuro;
+        System.out.print(ruble + " rubles are " + euroRuble + " euro. ");
+        System.out.println("Test result: " + passedRubleToEuro);
 
         double dollarRuble = Converter.rubleToDollar(ruble);
-        System.out.println(ruble + " rubles are " + dollarRuble + " dollar.");
+        double expectedRubleToDollar = 10.35;
+        boolean passedRubleToDollar = dollarRuble == expectedRubleToDollar;
+        System.out.print(ruble + " rubles are " + dollarRuble + " dollar. ");
+        System.out.println("Test result: " + passedRubleToDollar);
 
         double rubleEuro = Converter.rubleToEuro(Converter.euroToRuble(ruble));
-        System.out.println(euroRuble + " euro are " + rubleEuro + " rubles.");
+        double expectedEuroToRuble = 621;
+        boolean passedEuroToRuble = rubleEuro == expectedEuroToRuble;
+        System.out.print(euroRuble + " euro are " + rubleEuro + " rubles. ");
+        System.out.println("Test result: " + passedEuroToRuble);
 
         double rubleDollar = Converter.rubleToDollar(Converter.dollarToRuble(ruble));
-        System.out.println(dollarRuble + " dollar are " + rubleDollar + " rubles.");
+        double expectedDollarToRuble = 621;
+        boolean passedDollarToRuble = rubleDollar == expectedDollarToRuble;
+        System.out.print(dollarRuble + " dollar are " + rubleDollar + " rubles. ");
+        System.out.println("Test result: " + passedDollarToRuble);
     }
 }
