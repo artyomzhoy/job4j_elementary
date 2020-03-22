@@ -26,11 +26,17 @@ public class TrgArea {
         return Math.sqrt(V(a, b, c));
     }
     public static double area (double a, double b, double c) {
-        double rsl = Math.sqrt((halfPerimeter(a, b, c))*(((halfPerimeter(a, b, c)-a)*(((halfPerimeter(a, b, c)-b)*(((halfPerimeter(a, b, c)-c));
+        double halfPerimeter = (a + b + c) / 2;
+        double rsl = Math.sqrt(halfPerimeter*(halfPerimeter-a)*(halfPerimeter-b)*(halfPerimeter-c));
+        return rsl;
+    }
+    public static double area(double a, double b, double c) {
+        double rsl = Math.sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c));
         return rsl;
     }*/
     public static double area(double a, double b, double c) {
-        double rsl = Math.sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c));
+        double halfPerimeter = (a + b + c) / 2;
+        double rsl = Math.sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c));
         return rsl;
     }
 
