@@ -18,15 +18,18 @@ public class SqArea {
     Это первая попытка вычислений.
 
     public static double height (double p, double k) {
-        return p / (2*(k+1));
+        double rsl = p / (2*(k+1));
+        return rsl;
     }
 
     public static double length (double p, double k) {
-        return height(p, k) * k;
+        double rsl = height(p, k) * k;
+        return rsl;
     }
 
     public static double square (double p, double k) {
-        return  height(p, k) * length(p, k);
+        double rsl = height(p, k) * length(p, k);
+        return  rsl;
     }
 */
 

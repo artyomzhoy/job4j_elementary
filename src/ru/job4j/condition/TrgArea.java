@@ -6,8 +6,9 @@ P = (a + b + c) / 2
  */
 
 public class TrgArea {
-    /*public static double P (double a, double b, double c) {
-        return (a + b + c) / 2;
+    /*public static double halfPerimeter (double a, double b, double c) {
+        double rsl = (a + b + c) / 2;
+        return rsl;
     }
     public static double A (double a, double b, double c) {
         return P(a, b, c) - a;
@@ -23,6 +24,10 @@ public class TrgArea {
     }
     public static double area (double a, double b, double c) {
         return Math.sqrt(V(a, b, c));
+    }
+    public static double area (double a, double b, double c) {
+        double rsl = Math.sqrt((halfPerimeter(a, b, c))*(((halfPerimeter(a, b, c)-a)*(((halfPerimeter(a, b, c)-b)*(((halfPerimeter(a, b, c)-c));
+        return rsl;
     }*/
     public static double area (double a, double b, double c) {
         double rsl = Math.sqrt(((a + b + c) / 2)*(((a + b + c) / 2)-a)*(((a + b + c) / 2)-b)*(((a + b + c) / 2)-c));
