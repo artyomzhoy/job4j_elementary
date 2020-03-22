@@ -40,7 +40,7 @@ public class SqArea {
 
     public static void main(String[] args) {
 
-        int p = 6; // периметр
+        int p = 150; // периметр
         int k = 2; // во сколько раз длина больше высоты
 
         double result = SqArea.square(p, k);
