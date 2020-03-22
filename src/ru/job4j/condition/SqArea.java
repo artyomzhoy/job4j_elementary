@@ -33,17 +33,17 @@ public class SqArea {
     }
 */
 
-    public static double square (int p, int k) {
-        double rsl = (p / (2 * (k + 1)))*((p / (2 * (k + 1)))*k);
+    public static double square(int p, int k) {
+        double rsl = (p / (2 * (k + 1))) * ((p / (2 * (k + 1))) * k);
         return rsl;
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         int p = 6; // периметр
         int k = 2; // во сколько раз длина больше высоты
 
         double result = SqArea.square(p, k);
-        System.out.println ("p = " + p + ", k = " + k + ", s = " + result + ", real = " + result);
+        System.out.println("p = " + p + ", k = " + k + ", s = " + result + ", real = " + result);
     }
 }

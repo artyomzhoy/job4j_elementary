@@ -37,18 +37,18 @@ public class Point {
         System.out.println ("The distance between (" + X1 + ", " + Y1 + ") and " + "(" + X2 + ", " + Y2 + ") is " + result + ".");
 
     */
-    public static double distance (int x1, int y1, int x2, int y2) {
+    public static double distance(int x1, int y1, int x2, int y2) {
         double rsl = Math.sqrt((Math.pow((x2 - x1), 2)) + (Math.pow((y2 - y1), 2)));
         return rsl;
     }
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         // ДАНО
-        int X1 = 0; //Первая точка X
-        int Y1 = 0; //Первая точка Y
-        int X2 = 2; //Вторая точка X
-        int Y2 = 0; //Вторая точка Y
+        int x1 = 0; //Первая точка X
+        int y1 = 0; //Первая точка Y
+        int x2 = 2; //Вторая точка X
+        int y2 = 0; //Вторая точка Y
 
-        double result = Point.distance(X1, Y1, X2, Y2);
-        System.out.println ("The distance between (" + X1 + ", " + Y1 + ") and " + "(" + X2 + ", " + Y2 + ") is " + result + ".");
+        double result = Point.distance(x1, y1, x2, y2);
+        System.out.println("The distance between (" + x1 + ", " + y1 + ") and " + "(" + x2 + ", " + y2 + ") is " + result + ".");
     }
 }

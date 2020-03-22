@@ -29,18 +29,18 @@ public class TrgArea {
         double rsl = Math.sqrt((halfPerimeter(a, b, c))*(((halfPerimeter(a, b, c)-a)*(((halfPerimeter(a, b, c)-b)*(((halfPerimeter(a, b, c)-c));
         return rsl;
     }*/
-    public static double area (double a, double b, double c) {
-        double rsl = Math.sqrt(((a + b + c) / 2)*(((a + b + c) / 2)-a)*(((a + b + c) / 2)-b)*(((a + b + c) / 2)-c));
+    public static double area(double a, double b, double c) {
+        double rsl = Math.sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c));
         return rsl;
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         // ДАНО
         double a = 2;
         double b = 2;
         double c = 2;
 
         double rsl = TrgArea.area(a, b, c);
-        System.out.println ("Area (" + a + ", " + b + ", " + c + ") = " + rsl + ".");
+        System.out.println("Area (" + a + ", " + b + ", " + c + ") = " + rsl + ".");
     }
 }
