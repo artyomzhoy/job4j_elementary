@@ -1,26 +1,58 @@
 package ru.job4j.converter;
 
-public class Converter {
+/**
+ * Converter.
+ *
+ * @author Artyom Samoshin
+ */
 
+public class Converter {
+    /**
+     * Method rubleToEuro.
+     * @param value - ruble.
+     * @return rubleToEuro - convertation ruble to euro.
+     */
     public static double rubleToEuro(double value) {
         double rsl = value / 70;
         return  rsl;
     }
+    /**
+     * Method rubleToDollar.
+     * @param value - ruble.
+     * @return rubleToDollar - convertation ruble to dollar.
+     */
     public static double rubleToDollar(double value) {
         double rsl = value / 60;
         return rsl;
     }
+    /**
+     * Method euroToRuble.
+     * @param value - rubleToEuro(ruble).
+     * @return euroToRuble - convertation euro to ruble.
+     */
     public static double euroToRuble(double value) {
         double rsl = value * 70;
         return rsl;
     }
+    /**
+     * Method dollarToRuble.
+     * @param value - rubleToDollar(ruble).
+     * @return dollarToRuble - convertation dollar to ruble.
+     */
     public static double dollarToRuble(double value) {
         double rsl = value * 60;
         return rsl;
     }
 
+    /**
+     * Main.
+     * @param args - args.
+     */
     public static void main(String[] args) {
 
+        /**
+         * Contains value of ruble.
+         */
         int ruble = 621; // ДАНО
         /*
 621 rubles are 8.871428571428572 euro.
