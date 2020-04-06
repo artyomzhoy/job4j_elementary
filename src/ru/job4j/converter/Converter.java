@@ -50,9 +50,6 @@ public class Converter {
      */
     public static void main(String[] args) {
 
-        /**
-         * Contains value of ruble.
-         */
         int ruble = 621; // ДАНО
         /*
 621 rubles are 8.871428571428572 euro.
