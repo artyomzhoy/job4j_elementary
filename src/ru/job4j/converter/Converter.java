@@ -50,14 +50,7 @@ public class Converter {
      */
     public static void main(String[] args) {
 
-        int ruble = 621; // ДАНО
-        /*
-621 rubles are 8.871428571428572 euro.
-621 rubles are 10.35 dollar.
-8.871428571428572 euro are 621.0 rubles.
-10.35 dollar are 621.0 rubles.
-         */
-
+        int ruble = 621;
         double euroRuble = Converter.rubleToEuro(ruble);
         double expectedRubleToEuro = 8.871428571428572;
         boolean passedRubleToEuro = euroRuble == expectedRubleToEuro;
